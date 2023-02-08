@@ -18,7 +18,7 @@ public class BallMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         this.transform.Translate(direction * speed * Time.deltaTime);
         if (Input.GetKeyDown("space")) 
